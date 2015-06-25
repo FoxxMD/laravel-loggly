@@ -1,5 +1,5 @@
 {
-    "name": "foxxmd/loggly",
+    "name": "foxxmd/laravel-loggly",
     "description": "Loggly logging integration for Laravel projects",
     "keywords": ["laravel", "loggly", "monitoring", "error", "logging"],
     "license": "MIT",
