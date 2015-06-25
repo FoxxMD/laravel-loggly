@@ -1,4 +1,4 @@
-<?php namespace FoxxMD\Loggly;
+<?php namespace foxxmd\Loggly;
 
 use InvalidArgumentException;
 use Monolog\Handler\LogglyHandler;
