@@ -25,8 +25,9 @@ class LogglyServiceProvider extends ServiceProvider
         $app = $this->app;
 
         // Listen to log messages.
-        $app['log']->listen(function ($message) use ($app) {
-            $app['loggly.handler']->write($message);
+        $app['log']->listen(function () use ($app) {
+            $logger = \Log::getMonolog();
+            $logger->pushHandler($app['loggly.handler']);
         });
     }
 
